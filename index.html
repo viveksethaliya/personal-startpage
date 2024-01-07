@@ -7,11 +7,37 @@
             body{
                 background-image: url("back.png");
                 display: flex;
-                justify-content: center;
+                flex-direction: column;
                 align-items: center;
+                justify-content: center;
                 height: 100vh;
                 margin: 0;
 
+            }
+            .search-bar {
+                width: 80%;
+                display: flex;
+                justify-content: center;
+            
+            }
+            .search-input {
+                width: 100%;
+                padding: 8px;
+                border-radius: 50px;
+                border: 1px solid #212121;
+                outline: none;
+                box-sizing: border-box;
+                color: #ffffff;
+                background-color: black;
+                opacity: 0.8;
+                transform: scale(1.1);
+            }
+            .search-input:focus {
+                border-color: #ffffff;
+                
+            }
+            .search-btn {
+                display: none;
             }
             .mid{
                 background-color: rgb(0, 0, 0);
@@ -69,24 +95,17 @@
             a:hover {
                 color: rgb(0, 255, 0);
             }
-            .search-input {
-                width: 70%;
-                padding: 8px;
-                border-radius: 50px;
-                border: 1px solid #ccc;
-                outline: none;
-            }
             th{
                 border-bottom: 2px solid #ffffff;
             }
             .battery {
-            position: fixed;
-            top: 10px;
-            right: 10px;
-            display: flex;
-            align-items: center;
-            font-family: Arial, sans-serif;
-            color: #ffffff;
+                position: fixed;
+                top: 10px;
+                right: 10px;
+                display: flex;
+                align-items: center;
+                font-family: Arial, sans-serif;
+                color: #ffffff;
             }
             .battery-icon {
                 width: 30px;
@@ -118,23 +137,29 @@
             </div>
             <span class="battery-percentage">Loading...</span>
         </div>
+        <div class="search-bar">
+            <form action="https://www.google.com/search" method="GET" target="_blank">
+                <input type="text" name="q" class="search-input" placeholder="Search Google...">
+                <input type="submit" value="🔍" class="search-btn">
+            </form>
+        </div>
         <div class="mid">
-            <center>
+            <!-- <center>
                 <form action="https://www.google.com/search" method="GET" target="_blank">
                     <input type="text" name="q" class="search-input" placeholder="Search Google...">
                     <input type="submit" value="🔍" style="display: none;">
                 </form>
-            </center>
+            </center> -->
             <table style="color: rgb(255, 255, 255); width: 100%; text-decoration: none; border-spacing: 15px;">
                 <tr>
                     <th>
                         4chan
                     </th>
                     <th>
-                        social
+                        Social media
                     </th>
                     <th>
-                        web
+                        Web
                     </th>
                 </tr>
                 <tr>
@@ -269,6 +294,9 @@
             battery.addEventListener('levelchange', updateBatteryStatus);
             updateBatteryStatus();
         });
+        const midDiv = document.querySelector('.mid');
+        const searchInput = document.querySelector('.search-input');
+        searchInput.style.width = `${midDiv.offsetWidth * 0.8}px`; // Adjust width as needed
           </script>
     </body>
 </html>
