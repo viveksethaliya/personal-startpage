@@ -1,0 +1,274 @@
+<html>
+    <head>
+        <title>
+            shortcuts
+        </title>
+        <style>
+            body{
+                background-image: url("back.png");
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+
+            }
+            .mid{
+                background-color: rgb(0, 0, 0);
+                border: 3px solid #212121;
+                height: auto;
+                width: 50%;
+                opacity: 0.8;
+                border-radius: 10px;
+                font-family: Arial, Helvetica, sans-serif;
+                padding: 20px;
+                text-decoration: none;
+            }
+            .iphone-clock {
+                position: fixed;
+                top: 20px;
+                left: 20px;
+                background-color: #000000;
+                color: #ffffff;
+                padding: 10px 15px;
+                border-radius: 10px;
+                opacity: 0.8;
+            }
+            .clock {
+                font-size: 50px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .days {
+                display: flex;
+                justify-content: center;
+                margin-top: 10px;
+            }
+            .day {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background-color: #ffffff;
+                color: #000000;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 2px;
+                font-size: 14px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .today {
+                background-color: black;
+                color: #ffffff;
+                border: 1px solid white;
+                box-sizing: border-box;
+            }
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+            a:hover {
+                color: rgb(0, 255, 0);
+            }
+            .search-input {
+                width: 70%;
+                padding: 8px;
+                border-radius: 50px;
+                border: 1px solid #ccc;
+                outline: none;
+            }
+            th{
+                border-bottom: 2px solid #ffffff;
+            }
+            .battery {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            }
+            .battery-icon {
+                width: 30px;
+                height: 15px;
+                background-color: #000000;
+                border: 1px solid #000000;
+                border-radius: 2px;
+                position: relative;
+                margin-right: 5px;
+            }
+            .battery-level {
+                position: absolute;
+                top: 2px;
+                bottom: 2px;
+                left: 2px;
+                width: calc(95%);
+                background-color: #ffffff; /* Green color for the battery level */
+                border-radius: 1px;
+            }
+            .battery-percentage {
+                font-size: 12px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="battery" id="batteryDisplay">
+            <div class="battery-icon">
+                <div class="battery-level"></div>
+            </div>
+            <span class="battery-percentage">Loading...</span>
+        </div>
+        <div class="mid">
+            <center>
+                <form action="https://www.google.com/search" method="GET" target="_blank">
+                    <input type="text" name="q" class="search-input" placeholder="Search Google...">
+                    <input type="submit" value="🔍" style="display: none;">
+                </form>
+            </center>
+            <table style="color: rgb(255, 255, 255); width: 100%; text-decoration: none; border-spacing: 15px;">
+                <tr>
+                    <th>
+                        4chan
+                    </th>
+                    <th>
+                        social
+                    </th>
+                    <th>
+                        web
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://boards.4chan.org/r9k/"  rel="noopener noreferrer" target="_blank">/r9k/</a>
+                    </td>
+                    <td>
+                        <a href="https://www.youtube.com/"  rel="noopener noreferrer" target="_blank">Youtube</a>
+                    </td>
+                    <td>
+                        <a href="https://www.google.in/"  rel="noopener noreferrer" target="_blank">Google</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://boards.4chan.org/b/"  rel="noopener noreferrer" target="_blank">/b/</a>
+                    </td>
+                    <td>
+                        <a href="https://www.instagram.com/" rel="noopener noreferrer" target="_blank">Instagram</a>
+                    </td>
+                    <td>
+                        <a href="https://chat.openai.com/" rel="noopener noreferrer" target="_blank">ChatGPT</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://www.4chan.org/"  rel="noopener noreferrer" target="_blank">/home/</a>
+                    </td>
+                    <td>
+                        <a href="https://www.youtube.com/playlist?list=PLRM3yXMtlXTjYWdkc6VXG68MzWFbtlKeI"  rel="noopener noreferrer" target="_blank">Youtube songs</a>
+                    </td>
+                    <td>
+                        <a href="https://drive.google.com/drive/home"  rel="noopener noreferrer" target="_blank">Google Drive</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://boards.4chan.org/s4s/"  rel="noopener noreferrer" target="_blank">/s4s/</a>
+                    </td>
+                    <td>
+                        <a href="https://www.reddit.com/"  rel="noopener noreferrer" target="_blank">Raddit</a>
+                    </td>
+                    <td>
+                        <a href="https://mail.google.com/mail/u/0/#inbox"  rel="noopener noreferrer" target="_blank">Gmail</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://boards.4chan.org/v/"  rel="noopener noreferrer" target="_blank">/v/</a>
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                        <a href="https://piratebayproxy.net/"  rel="noopener noreferrer" target="_blank">Piratebay</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                        <a href="https://github.com/"  rel="noopener noreferrer" target="_blank">Github</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="iphone-clock">
+            <div class="clock">
+              <span id="hours">00</span>
+              <span>:</span>
+              <span id="minutes">00</span>
+              <span id="ampm">AM</span>
+            </div>
+            <div class="days" id="weekdays"></div>
+          </div>
+          <script>
+        function submitOnEnter(event) {
+            if (event.key === 'Enter') {
+                event.preventDefault(); // Prevent form submission
+                document.getElementById('searchForm').submit(); // Submit the form
+            }
+        }
+        function updateTime() {
+            const now = new Date();
+            let hours = now.getHours();
+            let minutes = now.getMinutes();
+            let ampm = hours >= 12 ? 'PM' : 'AM';
+
+            // Convert hours to 12-hour format
+            hours = hours % 12;
+            hours = hours ? hours : 12; // If hours is 0, make it 12
+
+            hours = hours < 10 ? '0' + hours : hours;
+            minutes = minutes < 10 ? '0' + minutes : minutes;
+
+            document.getElementById('hours').textContent = hours;
+            document.getElementById('minutes').textContent = minutes;
+            document.getElementById('ampm').textContent = ampm;
+
+            // Displaying days
+            const weekdays = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
+            const today = now.getDay();
+
+            let daysHTML = '';
+            for (let i = 0; i < weekdays.length; i++) {
+                if (i === today) {
+                    daysHTML += `<div class="day today">${weekdays[i]}</div>`;
+                } else {
+                    daysHTML += `<div class="day">${weekdays[i]}</div>`;
+                }
+            }
+            document.getElementById('weekdays').innerHTML = daysHTML;
+        }
+
+        // Update time every second
+        setInterval(updateTime, 1000);
+
+        // Initial call to display time immediately
+        updateTime();
+        navigator.getBattery().then(function(battery) {
+            function updateBatteryStatus() {
+                const batteryLevel = battery.level * 100;
+                const batteryPercentage = document.querySelector('.battery-percentage');
+                const batteryLevelIndicator = document.querySelector('.battery-level');
+
+                batteryPercentage.textContent = `${Math.floor(batteryLevel)}%`;
+                batteryLevelIndicator.style.width = `${batteryLevel}%`;
+            }
+
+            battery.addEventListener('levelchange', updateBatteryStatus);
+            updateBatteryStatus();
+        });
+          </script>
+    </body>
+</html>
